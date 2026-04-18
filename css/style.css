@@ -568,13 +568,19 @@ a:hover { color: var(--color-primary-hover); }
   align-items: start; /* prevent stretching */
 }
 
-/* Featured layout: featured card full-width on top, list cards stacked below — always single column */
-.article-grid--featured {
-  grid-template-columns: 1fr;
+/* Featured layout: featured card full-width on top, list cards stacked below — always single column, no exceptions */
+.article-grid--featured,
+.article-grid--featured.article-grid {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
   gap: var(--space-4);
 }
 
-/* Article card — base (list style for secondary cards) */
+/* ==============================
+   ARTICLE CARDS — List (horizontal) + Featured (vertical)
+   ============================== */
+
+/* List card — horizontal row: thumbnail left, text right */
 .article-card {
   background: var(--color-surface);
   border-radius: var(--radius-lg);
@@ -582,53 +588,55 @@ a:hover { color: var(--color-primary-hover); }
   overflow: hidden;
   transition: box-shadow var(--transition), transform var(--transition);
   display: flex;
-  flex-direction: row;       /* horizontal list layout */
-  align-items: stretch;
-  gap: 0;
+  flex-direction: row;
+  align-items: flex-start;
+  min-height: 130px;
 }
 .article-card:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
 }
 
-/* Thumbnail for list cards — fixed height so text body is never hidden */
+/* List card thumbnail — fixed square, never grows */
 .card-image {
-  width: 160px;
-  min-width: 160px;
-  height: 140px;
+  width: 150px;
+  min-width: 150px;
+  max-width: 150px;
+  height: 150px;
+  min-height: 150px;
+  max-height: 150px;
   flex-shrink: 0;
+  flex-grow: 0;
   overflow: hidden;
   background: var(--color-surface-offset);
-  position: relative;
-  border-radius: 0;
-  align-self: stretch;
-}
-@media (min-width: 480px) {
-  .card-image { width: 180px; min-width: 180px; height: 160px; }
 }
 .card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   transition: transform 0.4s ease;
 }
 .article-card:hover .card-image img { transform: scale(1.05); }
 
-/* Featured card — full vertical layout */
+/* Featured card — full vertical stack: image on top, text below */
 .article-card.card--featured {
   flex-direction: column;
-  height: 100%;
+  align-items: stretch;
 }
 .article-card.card--featured .card-image {
   width: 100%;
-  min-width: unset;
-  aspect-ratio: 4/3;
-  border-radius: 0;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: unset;
+  max-height: unset;
+  aspect-ratio: 16 / 9;
 }
-@media (min-width: 480px) {
-  .article-card.card--featured .card-image {
-    aspect-ratio: 16/10;
-  }
+.article-card.card--featured .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Card body */
