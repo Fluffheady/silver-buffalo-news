@@ -156,4 +156,68 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Nostalgia / Sports crossover articles (Directive 4.0) -->
+  <url>
+    <loc>https://silverbuffalonews.com/articles/why-1990s-bills-were-gold-for-buffalo.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silver Buffalo News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-19</news:publication_date>
+      <news:title>The 1990s Bills Run Made Buffalo Rich — And Most of Us Forgot How</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/five-things-we-miss-about-the-aud.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silver Buffalo News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-19</news:publication_date>
+      <news:title>5 Things We Miss About Memorial Auditorium — And One Thing We Don't</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/broadway-market-buffalo-easter-memories.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silver Buffalo News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-19</news:publication_date>
+      <news:title>The Broadway Market at Easter: What It Was, What It Still Is, and Why You Should Go This Year</news:title>
+    </news:news>
+  </url>
+
+  <!-- Support pages -->
+  <url>
+    <loc>https://silverbuffalonews.com/team.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/privacy.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/terms.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
 </urlset>

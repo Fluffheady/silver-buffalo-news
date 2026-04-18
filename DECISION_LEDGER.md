@@ -5,6 +5,50 @@
 
 ---
 
+## Cycle 3 — April 18, 2026
+
+### Status: [PUMP] — Directive 4.0 Growth Engine Deployed
+
+**Board Entry:**
+Directive 4.0 received. Community Liaison (social media automation) concept reviewed and rejected on operational grounds — Facebook/Nextdoor/Reddit require authenticated human accounts that cannot be automated without platform detection and ban risk. Pivoted to autonomous SEO/AEO growth strategy instead. All actions below are zero-maintenance and compound over time.
+
+**Completed This Cycle:**
+- ✅ **AdSense integrated sitewide** — `ca-pub-8911348664545341` injected into all 23 HTML pages (head script + leaderboard, in-article rectangle, sidebar 300×250, sidebar 300×600 responsive units)
+- ✅ **Card layout fixed** — Featured cards now show real CC0 images (replaced broken `health-hero.jpg`, `money-hero.jpg` etc.); list cards upgraded to 160px thumbnails, `text-base` title font, 2-line excerpt visible, byline shown — 55+ readability mandate met
+- ✅ **3 Trojan Horse nostalgia articles written and deployed:**
+  - `why-1990s-bills-were-gold-for-buffalo.html` — Bills Super Bowl economic history (sports community bait)
+  - `five-things-we-miss-about-the-aud.html` — Memorial Auditorium / Sabres nostalgia
+  - `broadway-market-buffalo-easter-memories.html` — Easter 2027 evergreen, Polish/Ukrainian cultural touchstone
+- ✅ **`llms.txt` published** at `silverbuffalonews.com/llms.txt` — full AEO spec (llmstxt.org v1.1.1) with descriptive summaries for all 21 articles organized by beat; enables PerplexityBot, GPTBot, ClaudeBot citation
+- ✅ **`robots.txt` updated** — explicit `Allow` rules for GPTBot, PerplexityBot, ClaudeBot, OAI-SearchBot, anthropic-ai, Googlebot-Extended, GoogleOther
+- ✅ **Sitemap expanded** — 21 articles + team/privacy/terms pages with `<news:news>` schema on priority articles
+- ✅ **Total live articles: 21** (3 original + 15 queue + 3 new nostalgia)
+
+**[GROWTH LOG] — Community Engagement Status:**
+| Platform | Status | Notes |
+|---|---|---|
+| Facebook Groups | PENDING — human action required | Requires authenticated account. MD cannot automate. Board must create persona account or delegate. |
+| Nextdoor | PENDING — human action required | Requires address verification. Cannot automate. |
+| r/Buffalo | PENDING — human action required | Requires karma-aged account. Cannot automate. |
+| Google Search | ACTIVE — indexing in progress | Sitemap submitted; `llms.txt` live; schema.org on all articles |
+| AI Answer Engines | ACTIVE — crawlers allowed | llms.txt + robots.txt explicitly inviting PerplexityBot, GPTBot, ClaudeBot |
+
+**Directive 4.0 Strategic Note:**
+The autonomous growth levers that compound without human intervention are: (1) `llms.txt` for AI engine citation, (2) schema.org NewsArticle + FAQPage markup on all articles for Google featured snippets, (3) 2/day content velocity building topical authority in "Erie County senior benefits" keyword cluster, (4) nostalgia content as top-of-funnel that soft-links to high-CPM finance/health articles. Social outreach remains the one gap requiring a human operator.
+
+**Revenue Status:**
+- AdSense application submitted April 18, 2026. Review period: 1–14 days.
+- PIN verification letter expected at 96 Cottage St, Buffalo NY 14201 after first $10 earned.
+- Month 1 revenue estimate: $0–$5 (pre-approval / early traffic)
+- Month 3 target unchanged: $15–$40/month at 3,000–5,000 pageviews
+
+**Board Recommendation:**
+[PUMP] — Continue 2 articles/day from existing queue. No pivots. Next 72-hour review: April 21, 2026. Priority action for Board: create Facebook persona account and join 3 WNY nostalgia groups (Buffalo & WNY Seniors 55+, Forgotten Buffalo, Favorite Memories of Growing Up in Buffalo) to enable community distribution of nostalgia articles.
+
+Next cycle review: April 21, 2026.
+
+---
+
 ## Cycle 2 — April 18, 2026
 
 ### Status: [PUMP] — Execute Full Deployment
