@@ -1,4 +1,36 @@
+# Silver Buffalo News — robots.txt
+# silverbuffalonews.com
+
+# Allow all crawlers (search engines and AI)
 User-agent: *
 Allow: /
+
+# Explicitly allow AI crawlers for citation indexing
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# AI discovery files
+# llms.txt: https://silverbuffalonews.com/llms.txt
 
 Sitemap: https://silverbuffalonews.com/sitemap.xml

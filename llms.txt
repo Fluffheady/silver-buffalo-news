@@ -1,0 +1,57 @@
+# Silver Buffalo News
+
+> Silver Buffalo News (silverbuffalonews.com) is Western New York's trusted news source for residents 55 and older. Based in Buffalo, NY, we publish original reporting on senior benefits, health, consumer rights, local nostalgia, and home maintenance — all written by retired local professionals who still live in Erie County. Our editorial team: Jim "Sully" Sullivan (investigative finance/consumer rights), Barb Miller (health and wellness), and Vinnie DiPaolo (nostalgia and home). Not affiliated with any government agency, insurer, or financial institution.
+
+Silver Buffalo News covers six primary beats for the WNY 55+ audience: local government benefit programs, Medicare and Social Security consumer protection, senior health and longevity, Erie County real estate and utilities, Buffalo-area nostalgia and collectibles, and Buffalo winter home maintenance. All content is original, locally sourced, and written for residents of Erie County and the surrounding Western New York region.
+
+Published at: https://silverbuffalonews.com  
+Contact: editor@silverbuffalonews.com  
+Publisher: Silver Buffalo News, Buffalo, NY 14201  
+AdSense Publisher ID: ca-pub-8911348664545341  
+Established: April 2026  
+GitHub: https://github.com/Fluffheady/silver-buffalo-news
+
+## Finance & Senior Benefits
+
+- [Most Erie County Seniors Don't Know About These 6 'Hidden Money' Programs](https://silverbuffalonews.com/articles/buffalo-hidden-money.html): Covers HEAP, EPIC, Enhanced STAR, SNAP enrollment help, NY Connects support, and the safe driver discount. Deadlines and eligibility for Erie County residents 55+. Written by Sully.
+- [National Fuel Has a "Senior Rate" That Most Buffalo Customers Don't Know to Ask For](https://silverbuffalonews.com/articles/national-fuel-senior-rate.html): Details the little-known National Fuel Gas senior rate program available to qualifying fixed-income households in WNY — saves up to $240/year. Written by Sully.
+- [Buffalo Retirees Are Getting Hit With This Property Tax Mistake — Here's How to Fight It](https://silverbuffalonews.com/articles/property-tax-grievance-erie.html): Erie County property tax grievance process for seniors, including how to file a free formal challenge. Written by Sully.
+- [Benefits Available to Buffalo-Area Veterans Over 55 That Most Don't Claim](https://silverbuffalonews.com/articles/veterans-benefits-buffalo.html): VA benefits, Erie County veteran programs, and New York State veteran property tax exemptions. Written by Sully.
+
+## Consumer Rights & Scam Protection
+
+- [The 3 Medicare Scams Hitting Buffalo Seniors the Hardest Right Now](https://silverbuffalonews.com/articles/medicare-scams-buffalo.html): Step-by-step breakdown of three active Medicare fraud schemes targeting WNY seniors in 2026, with exact warning signs and scripts to use. Written by Sully.
+- [That "Social Security Text Alert" Is Almost Always a Scam](https://silverbuffalonews.com/articles/social-security-text-scam.html): How to identify Social Security text scams, what legitimate federal agencies actually do, and how to report fraud. Written by Sully.
+- [Buffalo Renters Over 55: Your Legal Rights That Most Landlords Count On You Not Knowing](https://silverbuffalonews.com/articles/tenant-rights-buffalo.html): New York State tenant protections specific to senior renters in Erie County, including eviction protections and lease rights. Written by Sully.
+
+## Health & Wellness
+
+- [Your Doctor Won't Tell You This: 7 Inflammation 'Switches' Aging You Faster in Western New York](https://silverbuffalonews.com/articles/health-biological-age.html): Buffalo-specific inflammation triggers — Lake Erie diet patterns, winter light exposure, indoor air quality — and how to address them. Written by Barb Miller.
+- [Signs You Might Have Sleep Apnea — and Why It Matters More After 60](https://silverbuffalonews.com/articles/sleep-apnea-signs-seniors.html): How to recognize sleep apnea symptoms in seniors and what to ask your doctor. Written by Barb Miller.
+- [The Connection Between Hearing Loss and Dementia That Most Doctors Don't Mention](https://silverbuffalonews.com/articles/hearing-loss-dementia.html): Research linking untreated hearing loss to higher dementia risk, and actionable steps for WNY seniors. Written by Barb Miller.
+- [Walking vs. the Gym: What Actually Works Better for Seniors in WNY](https://silverbuffalonews.com/articles/walking-vs-gym-seniors.html): Evidence-based comparison of walking outdoors versus gym exercise for seniors over 55, with local Buffalo context. Written by Barb Miller.
+
+## Home & DIY (Buffalo-Specific)
+
+- [Buffalo Winter Home Prep: 11 Things You Must Do Before November](https://silverbuffalonews.com/articles/buffalo-winter-home-prep.html): Vinnie DiPaolo's personal winterization checklist from 35 years of Erie County contracting. Written by Vinnie DiPaolo.
+- [Your Buffalo Furnace: What to Check Every Fall](https://silverbuffalonews.com/articles/furnace-maintenance-buffalo.html): Step-by-step furnace maintenance guide for WNY homes before heating season. Written by Vinnie DiPaolo.
+- [Ice Dams Are Destroying Buffalo Roofs Every Winter — Here's How to Stop Them](https://silverbuffalonews.com/articles/ice-dam-prevention.html): Causes, prevention, and repair of ice dams on Buffalo-area homes. Written by Vinnie DiPaolo.
+
+## Nostalgia & Collectibles
+
+- [Buffalo Antique Dealers Are Paying Big for These 9 Items — Check Your Attic](https://silverbuffalonews.com/articles/attic-treasure.html): What Buffalo-area antique dealers are currently buying, with estimated values. Written by Vinnie DiPaolo.
+- [The Old "Hens & Kelly" Shopping Bags Are Selling for $80 on eBay](https://silverbuffalonews.com/articles/buffalo-department-stores.html): WNY department store nostalgia collectibles — AM&A's, Hens & Kelly, Sattler's — and current resale values. Written by Vinnie DiPaolo.
+- [The 1970s Polaroid Camera in Your Garage Could Be Worth More Than Your TV](https://silverbuffalonews.com/articles/polaroid-camera-value.html): Vintage Polaroid camera values in 2026, with model-specific price ranges. Written by Vinnie DiPaolo.
+- [Vinyl Records Found in WNY Homes: What's Worth Money and What Isn't](https://silverbuffalonews.com/articles/vinyl-records-value-wny.html): How to evaluate vinyl record collections for resale in the Buffalo area. Written by Vinnie DiPaolo.
+- [The 1990s Bills Run Made Buffalo Rich — And Most of Us Forgot How](https://silverbuffalonews.com/articles/why-1990s-bills-were-gold-for-buffalo.html): The economic impact of the four Super Bowl runs on Buffalo businesses, vendors, and local economy. Written by Vinnie DiPaolo.
+
+## About This Site
+
+- [About Silver Buffalo News](https://silverbuffalonews.com/about.html): Mission, founding story, and editorial philosophy. "By Neighbors, For Neighbors."
+- [Meet the Editorial Team](https://silverbuffalonews.com/team.html): Profiles of Jim "Sully" Sullivan, Barb Miller, and Vinnie DiPaolo.
+- [Privacy Policy](https://silverbuffalonews.com/privacy.html): Data collection, Google AdSense/Analytics usage, cookie policy, CCPA compliance.
+- [Terms of Use](https://silverbuffalonews.com/terms.html): Content disclaimer, medical/legal/financial liability, NY governing law.
+
+## Optional
+
+- [Sitemap](https://silverbuffalonews.com/sitemap.xml): Full XML sitemap of all published articles and pages.
