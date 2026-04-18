@@ -3,7 +3,7 @@
 
 **Chairman:** Brian Ash  
 **Managing Director:** AI  
-**Site:** https://fluffheady.github.io/silver-buffalo-news/  
+**Site:** https://silverbuffalonews.com/ (custom domain — DNS configured)  
 **Repository:** https://github.com/Fluffheady/silver-buffalo-news  
 **Initialized:** April 18, 2026  
 
@@ -106,10 +106,10 @@ Based on scanning NY Statewide Senior Action Council calendar, After50News.com, 
 
 | # | Decision | Options | Deadline |
 |---|---|---|---|
-| 1 | **AdSense Application** | Apply now with 4 articles, or wait until 10+ articles for higher approval confidence? | Before Cycle 2 |
-| 2 | **Custom Domain** | Purchase silverbuffalonews.com ($12/year) to improve SEO trust signals? | Before Cycle 2 |
-| 3 | **Email List Platform** | ConvertKit (free up to 1,000 subscribers) vs. Beehiiv ($0 free tier + monetization features)? | Before Cycle 2 |
-| 4 | **Taboola/Outbrain Native Ads** | Apply to native ad networks now or wait until 10k monthly pageviews? | Cycle 3 |
+| 1 | **AdSense Application** | ✅ Account created (silverbuffalonews@gmail.com) — apply at adsense.google.com when 15+ articles live | Before Cycle 3 |
+| 2 | **Custom Domain** | ✅ DONE — silverbuffalonews.com purchased ($11.18, Namecheap). DNS A records + CNAME configured. Enter domain in GitHub Pages Settings to complete. | COMPLETE |
+| 3 | **Email List Platform** | Gmail fine now. Upgrade to Beehiiv (free up to 2,500 subs + has ad network) when 50+ subscribers | Cycle 3+ |
+| 4 | **Taboola/Outbrain Native Ads** | Wait until 10k monthly pageviews | Cycle 5+ |
 
 ---
 
@@ -127,17 +127,28 @@ Based on scanning NY Statewide Senior Action Council calendar, After50News.com, 
 
 ## CONTENT PIPELINE — Approved & Queued
 
-| Priority | Title | Bucket | CPM Est. | Status |
-|---|---|---|---|---|
-| 1 | 6 Hidden Money Programs (Erie County) | Finance | $12–$22 | ✅ Published |
-| 2 | 7 Inflammation Switches (WNY) | Health | $8–$15 | ✅ Published |
-| 3 | 9 Attic Treasures (Buffalo) | Nostalgia | $4–$8 | ✅ Published |
-| 4 | National Fuel Senior Rate | Finance/Utility | $10–$18 | 📋 Queued |
-| 5 | Erie County Property Tax Grievance | Finance/Legal | $12–$20 | 📋 Queued |
-| 6 | Medicare Scams Hitting Buffalo Seniors | Consumer/Legal | $10–$18 | 📋 Queued |
-| 7 | The Lake Effect Sleep Problem | Health | $7–$14 | 📋 Queued |
-| 8 | Medicaid Look-Back Rule | Finance/Legal | $14–$22 | 📋 Queued |
-| 9 | WNY Woman Lost $14k (Fraud Narrative) | Consumer/Legal | $10–$16 | 📋 Queued |
+**Release Cadence: 2 articles/day starting April 19, 2026. Total pipeline: 18 articles.**
+
+| Priority | Title | Bucket | CPM Est. | Publish Date | Author | Status |
+|---|---|---|---|---|---|---|
+| 1 | 6 Hidden Money Programs (Erie County) | Finance | $12–$22 | Apr 18 | Margaret Kowalski | ✅ Published |
+| 2 | 7 Inflammation Switches (WNY) | Health | $8–$15 | Apr 17 | Dr. Diane Moretti | ✅ Published |
+| 3 | 9 Attic Treasures (Buffalo) | Nostalgia | $4–$8 | Apr 16 | Patricia Hernandez | ✅ Published |
+| 4 | Medicare Scams Buffalo | Consumer/Legal | $10–$18 | Apr 19 | Robert Vitale | 🔄 Drafting |
+| 5 | Social Security Text Scam | Consumer/Legal | $10–$18 | Apr 19 | Robert Vitale | 🔄 Drafting |
+| 6 | Tenant Rights Buffalo | Consumer/Legal | $10–$18 | Apr 20 | Robert Vitale | 🔄 Drafting |
+| 7 | Walking vs. Gym — Seniors | Health | $8–$15 | Apr 20 | Dr. Diane Moretti | 🔄 Drafting |
+| 8 | Sleep Apnea Signs Seniors | Health | $8–$15 | Apr 21 | Dr. Diane Moretti | 🔄 Drafting |
+| 9 | Hearing Loss & Dementia Link | Health | $8–$15 | Apr 21 | Dr. Diane Moretti | 🔄 Drafting |
+| 10 | National Fuel Senior Rate | Finance/Utility | $10–$20 | Apr 22 | Margaret Kowalski | 🔄 Drafting |
+| 11 | Property Tax Grievance Erie | Finance/Legal | $10–$20 | Apr 22 | Margaret Kowalski | 🔄 Drafting |
+| 12 | Veterans Benefits Buffalo | Finance | $10–$20 | Apr 23 | Margaret Kowalski | 🔄 Drafting |
+| 13 | Buffalo Department Stores | Nostalgia | $4–$8 | Apr 23 | Patricia Hernandez | 🔄 Drafting |
+| 14 | Vinyl Records Value WNY | Nostalgia | $4–$8 | Apr 24 | Patricia Hernandez | 🔄 Drafting |
+| 15 | Polaroid Camera Value | Nostalgia | $4–$8 | Apr 24 | Patricia Hernandez | 🔄 Drafting |
+| 16 | Furnace Maintenance Buffalo | DIY Home | $6–$12 | Apr 25 | Patricia Hernandez | 🔄 Drafting |
+| 17 | Buffalo Winter Home Prep | DIY Home | $6–$12 | Apr 25 | Patricia Hernandez | 🔄 Drafting |
+| 18 | Ice Dam Prevention | DIY Home | $6–$12 | Apr 26 | Patricia Hernandez | 🔄 Drafting |
 
 ---
 

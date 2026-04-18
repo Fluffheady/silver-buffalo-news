@@ -1,27 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+
+  <!-- Homepage -->
   <url>
     <loc>https://silverbuffalonews.com/</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://silverbuffalonews.com/about.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Published Articles (3) -->
   <url>
     <loc>https://silverbuffalonews.com/articles/health-biological-age.html</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silver Buffalo News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-17</news:publication_date>
+      <news:title>7 Inflammation Switches Aging You Faster in Western New York</news:title>
+    </news:news>
   </url>
+
   <url>
     <loc>https://silverbuffalonews.com/articles/buffalo-hidden-money.html</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silver Buffalo News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-18</news:publication_date>
+      <news:title>Most Erie County Seniors Don't Know About These 6 Hidden Money Programs</news:title>
+    </news:news>
   </url>
+
   <url>
     <loc>https://silverbuffalonews.com/articles/attic-treasure.html</loc>
     <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silver Buffalo News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-16</news:publication_date>
+      <news:title>Buffalo Antique Dealers Are Paying Big for These 9 Attic Items</news:title>
+    </news:news>
   </url>
+
+  <!-- Queued Articles (15) — will be published 2/day starting April 19 -->
+  <url>
+    <loc>https://silverbuffalonews.com/articles/medicare-scams-buffalo.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/social-security-text-scam.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/tenant-rights-buffalo.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/walking-vs-gym-seniors.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/sleep-apnea-signs-seniors.html</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/hearing-loss-dementia.html</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/national-fuel-senior-rate.html</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/property-tax-grievance-erie.html</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/veterans-benefits-buffalo.html</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/buffalo-department-stores.html</loc>
+    <lastmod>2026-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/vinyl-records-value-wny.html</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/polaroid-camera-value.html</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/furnace-maintenance-buffalo.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/buffalo-winter-home-prep.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/ice-dam-prevention.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
