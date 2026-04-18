@@ -77,7 +77,7 @@ All preconditions for AdSense manual review application have been met. Recommend
 | Privacy Policy page | ✅ /privacy.html |
 | Terms of Use page | ✅ /terms.html |
 | About Us page | ✅ /about.html |
-| Contact email in footer | ✅ editor@silverbuffalonews.com |
+| Contact email in footer | ✅ silverbuffalonews@gmail.com |
 | Author attribution on all articles | ✅ All 18 articles have named bylines |
 | Footer Privacy/Terms links | ✅ Wired sitewide |
 | Custom domain | ✅ silverbuffalonews.com (pending DNS propagation) |
