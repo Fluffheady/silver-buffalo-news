@@ -220,4 +220,46 @@
     <priority>0.4</priority>
   </url>
 
+  <url>
+    <loc>https://silverbuffalonews.com/articles/enhanced-star-exemption-deadline.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silver Buffalo News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-18</news:publication_date>
+      <news:title>Enhanced Star Exemption Deadline</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/blood-pressure-seniors-wny.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silver Buffalo News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-18</news:publication_date>
+      <news:title>Blood Pressure Seniors Wny</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/buffalo-china-value.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silver Buffalo News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-18</news:publication_date>
+      <news:title>Buffalo China Value</news:title>
+    </news:news>
+  </url>
 </urlset>
