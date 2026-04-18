@@ -33,6 +33,101 @@
     "logo": "https://silverbuffalonews.com/images/logo.svg"
   }
   </script>
+
+  <style>
+    /* ── Welcome from the Editor ──────────────────────────── */
+    .editor-welcome {
+      background: linear-gradient(135deg, #0f1f3d 0%, #1a3a6b 60%, #2d5f8a 100%);
+      padding: var(--space-12) 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .editor-welcome::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .editor-welcome-inner {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: var(--space-8);
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .editor-photo-wrap {
+      text-align: center;
+    }
+    .editor-photo {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top center;
+      border: 4px solid rgba(255,255,255,0.25);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      display: block;
+      margin: 0 auto var(--space-2);
+    }
+    .editor-photo-name {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+    }
+    .editor-content {
+      color: #fff;
+    }
+    .editor-eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: var(--space-2);
+    }
+    .editor-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.25;
+      margin-bottom: var(--space-4);
+    }
+    .editor-content p {
+      font-family: 'Source Serif 4', serif;
+      font-size: clamp(0.95rem, 1.5vw, 1.08rem);
+      line-height: 1.78;
+      color: rgba(255,255,255,0.88);
+      margin-bottom: var(--space-4);
+    }
+    .editor-content p:last-of-type {
+      margin-bottom: var(--space-5);
+    }
+    .editor-sig {
+      font-family: 'Source Serif 4', serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: rgba(255,255,255,0.7);
+    }
+    .editor-sig strong {
+      color: rgba(255,255,255,0.9);
+      font-style: normal;
+    }
+    @media (max-width: 640px) {
+      .editor-welcome-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .editor-photo-wrap {
+        margin-bottom: var(--space-2);
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -68,6 +163,7 @@
           <a href="articles/buffalo-hidden-money.html">Money</a>
           <a href="articles/attic-treasure.html">Nostalgia</a>
           <a href="about.html">About Us</a>
+          <a href="team.html">Our Team</a>
           <a href="#newsletter">Newsletter</a>
         </nav>
 
@@ -99,6 +195,40 @@
     </div>
   </div>
 
+  <!-- Welcome from the Editor -->
+  <section class="editor-welcome" aria-label="Welcome from the Editor-in-Chief">
+    <div class="container">
+      <div class="editor-welcome-inner">
+        <div class="editor-photo-wrap">
+          <img
+            src="images/team-sully.png"
+            alt="Jim 'Sully' Sullivan, Editor-in-Chief of Silver Buffalo News"
+            class="editor-photo"
+            width="130"
+            height="130"
+            loading="eager"
+            onerror="this.style.display='none'"
+          >
+          <div class="editor-photo-name">Jim "Sully" Sullivan<br>Editor-in-Chief</div>
+        </div>
+        <div class="editor-content">
+          <div class="editor-eyebrow">Welcome from the Editor</div>
+          <h2>We Built This Because Someone Had To</h2>
+          <p>
+            I spent 31 years covering this city. I know what the county does when it doesn't want seniors to know about a program: they put it on a PDF buried on a website nobody checks, hold a press release nobody covers, and wait. That's it. That's the plan.
+          </p>
+          <p>
+            Silver Buffalo News exists to fix that. Me, Barb, and Vinnie — all retired, all still in this city — we're writing about what actually matters to people 55 and older in WNY. Money on the table at the county. Health stuff your doctor didn't explain. Your old stuff that's worth something at the Broadway Market or an estate sale. And the scams targeting people we know.
+          </p>
+          <p>
+            We're not corporate. We're not a TV station doing a 30-second segment. This is a newspaper for neighbors, written by neighbors. I hope you find something useful in it. If you do, pass it along.
+          </p>
+          <div class="editor-sig"><strong>— Jim "Sully" Sullivan</strong>, Editor-in-Chief · South Buffalo, NY</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Categories Bar -->
   <div class="categories-bar" aria-label="Content categories">
     <div class="container">
@@ -107,8 +237,8 @@
         <a href="articles/health-biological-age.html" class="cat-pill">❤️ Health &amp; Longevity</a>
         <a href="articles/buffalo-hidden-money.html" class="cat-pill">💰 Money &amp; Benefits</a>
         <a href="articles/attic-treasure.html" class="cat-pill">🏺 Nostalgia &amp; Collectibles</a>
-        <a href="#consumer-rights" class="cat-pill">⚖️ Consumer Rights</a>
-        <a href="#diy-home" class="cat-pill">🔧 DIY &amp; Home</a>
+        <a href="articles/medicare-scams-buffalo.html" class="cat-pill">⚖️ Consumer Rights</a>
+        <a href="articles/furnace-maintenance-buffalo.html" class="cat-pill">🔧 DIY &amp; Home</a>
       </div>
     </div>
   </div>
@@ -138,9 +268,9 @@
           <span>📍 Erie County, NY</span>
         </div>
         <div class="hero-byline">
-          <div class="hero-byline-avatar">MK</div>
+          <img src="images/team-sully.png" alt="Jim 'Sully' Sullivan" style="width:40px;height:40px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.style.display='none'">
           <div>
-            <strong>Margaret Kowalski</strong> · Senior Finance Reporter
+            <strong>Jim "Sully" Sullivan</strong> · Editor-in-Chief
           </div>
         </div>
         <div style="margin-top: var(--space-8);">
@@ -174,10 +304,10 @@
                   <a href="articles/health-biological-age.html" class="card-title">Your Doctor Won't Tell You This: 7 Inflammation 'Switches' That Are Aging You Faster in Western New York</a>
                   <p class="card-excerpt">Buffalo's harsh winters, Lake Erie diet patterns, and even your indoor light exposure are silently triggering inflammation. Here are 7 specific switches you can flip — starting today.</p>
                   <div class="card-byline">
-                    <div class="byline-avatar">DM</div>
+                    <img src="images/team-barb.png" alt="Barb Miller" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\'byline-avatar\' style=\'background:var(--color-accent);\'>BM</div>'">
                     <div class="byline-info">
-                      <span class="byline-name">Dr. Diane Moretti</span>
-                      <span>Health &amp; Wellness Editor</span>
+                      <span class="byline-name">Barb Miller</span>
+                      <span>Health &amp; Lifestyle Editor</span>
                     </div>
                   </div>
                   <div class="card-meta">
@@ -193,20 +323,20 @@
               <!-- Card 2 -->
               <article class="article-card">
                 <div class="card-body">
-                  <a href="#" class="card-category">❤️ Health</a>
-                  <a href="#" class="card-title">The "Lake Effect" Sleep Problem: Why Buffalo Winters Are Destroying Your Sleep</a>
-                  <p class="card-excerpt">Less than 5 hours of daylight in January. Sleep researchers say WNY's weather is unique in how it disrupts melatonin — and here's what actually helps.</p>
+                  <a href="articles/sleep-apnea-signs-seniors.html" class="card-category">❤️ Health</a>
+                  <a href="articles/sleep-apnea-signs-seniors.html" class="card-title">Signs You Might Have Sleep Apnea — and Why It Matters More After 60</a>
+                  <p class="card-excerpt">Sleep apnea is common in seniors, but most don't recognize the signs. Barb explains what to watch for and what to ask your doctor.</p>
                   <div class="card-byline">
-                    <div class="byline-avatar">DM</div>
+                    <img src="images/team-barb.png" alt="Barb Miller" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\'byline-avatar\' style=\'background:var(--color-accent);\'>BM</div>'">
                     <div class="byline-info">
-                      <span class="byline-name">Dr. Diane Moretti</span>
-                      <span>Health &amp; Wellness Editor</span>
+                      <span class="byline-name">Barb Miller</span>
+                      <span>Health &amp; Lifestyle Editor</span>
                     </div>
                   </div>
                   <div class="card-meta">
                     <div class="card-meta-left">
                       <span class="read-time-badge">⏱ 6 min</span>
-                      <span>Apr 14, 2026</span>
+                      <span>Apr 21, 2026</span>
                     </div>
                   </div>
                 </div>
@@ -215,20 +345,20 @@
               <!-- Card 3 -->
               <article class="article-card">
                 <div class="card-body">
-                  <a href="#" class="card-category">❤️ Health</a>
-                  <a href="#" class="card-title">Doctors in Buffalo Are Now Calling This the "Silent Epidemic" Among Seniors Over 60</a>
-                  <p class="card-excerpt">It's not heart disease or diabetes — and most people over 60 in WNY have it without knowing. A simple home test can tell you in minutes.</p>
+                  <a href="articles/hearing-loss-dementia.html" class="card-category">❤️ Health</a>
+                  <a href="articles/hearing-loss-dementia.html" class="card-title">The Connection Between Hearing Loss and Dementia That Most Doctors Don't Mention</a>
+                  <p class="card-excerpt">Research now links untreated hearing loss to significantly higher dementia risk. What you can do about it — and why it's worth acting on sooner rather than later.</p>
                   <div class="card-byline">
-                    <div class="byline-avatar">DM</div>
+                    <img src="images/team-barb.png" alt="Barb Miller" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\'byline-avatar\' style=\'background:var(--color-accent);\'>BM</div>'">
                     <div class="byline-info">
-                      <span class="byline-name">Dr. Diane Moretti</span>
-                      <span>Health &amp; Wellness Editor</span>
+                      <span class="byline-name">Barb Miller</span>
+                      <span>Health &amp; Lifestyle Editor</span>
                     </div>
                   </div>
                   <div class="card-meta">
                     <div class="card-meta-left">
                       <span class="read-time-badge">⏱ 7 min</span>
-                      <span>Apr 10, 2026</span>
+                      <span>Apr 21, 2026</span>
                     </div>
                   </div>
                 </div>
@@ -261,10 +391,10 @@
                   <a href="articles/buffalo-hidden-money.html" class="card-title">Most Erie County Seniors Don't Know About These 6 'Hidden Money' Programs — Check Before June 30</a>
                   <p class="card-excerpt">HEAP, EPIC, Enhanced STAR, SNAP enrollment help, NY Connects support, and the safe driver discount. Each one puts real money back in your pocket — but the deadlines are coming up fast.</p>
                   <div class="card-byline">
-                    <div class="byline-avatar">MK</div>
+                    <img src="images/team-sully.png" alt="Jim Sully Sullivan" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\'byline-avatar\' style=\'background:var(--color-primary);\'>JS</div>'">
                     <div class="byline-info">
-                      <span class="byline-name">Margaret Kowalski</span>
-                      <span>Senior Finance Reporter</span>
+                      <span class="byline-name">Jim "Sully" Sullivan</span>
+                      <span>Editor-in-Chief</span>
                     </div>
                   </div>
                   <div class="card-meta">
@@ -279,20 +409,20 @@
 
               <article class="article-card">
                 <div class="card-body">
-                  <a href="#" class="card-category">💰 Finance</a>
-                  <a href="#" class="card-title">Buffalo Retirees Are Getting Hit With This Property Tax Mistake — Here's How to Fight It</a>
+                  <a href="articles/property-tax-grievance-erie.html" class="card-category">💰 Finance</a>
+                  <a href="articles/property-tax-grievance-erie.html" class="card-title">Buffalo Retirees Are Getting Hit With This Property Tax Mistake — Here's How to Fight It</a>
                   <p class="card-excerpt">Erie County's reassessment left hundreds of seniors overpaying. The grievance window is open, and you can do it for free.</p>
                   <div class="card-byline">
-                    <div class="byline-avatar">MK</div>
+                    <img src="images/team-sully.png" alt="Jim Sully Sullivan" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\'byline-avatar\' style=\'background:var(--color-primary);\'>JS</div>'">
                     <div class="byline-info">
-                      <span class="byline-name">Margaret Kowalski</span>
-                      <span>Senior Finance Reporter</span>
+                      <span class="byline-name">Jim "Sully" Sullivan</span>
+                      <span>Editor-in-Chief</span>
                     </div>
                   </div>
                   <div class="card-meta">
                     <div class="card-meta-left">
                       <span class="read-time-badge">⏱ 5 min</span>
-                      <span>Apr 12, 2026</span>
+                      <span>Apr 22, 2026</span>
                     </div>
                   </div>
                 </div>
@@ -300,20 +430,20 @@
 
               <article class="article-card">
                 <div class="card-body">
-                  <a href="#" class="card-category">💰 Finance</a>
-                  <a href="#" class="card-title">National Fuel Has a "Senior Rate" That Most Buffalo Customers Don't Know to Ask For</a>
+                  <a href="articles/national-fuel-senior-rate.html" class="card-category">💰 Finance</a>
+                  <a href="articles/national-fuel-senior-rate.html" class="card-title">National Fuel Has a "Senior Rate" That Most Buffalo Customers Don't Know to Ask For</a>
                   <p class="card-excerpt">A little-advertised rate class that qualifying fixed-income households can use to save up to $240/year — you just have to call and ask.</p>
                   <div class="card-byline">
-                    <div class="byline-avatar">MK</div>
+                    <img src="images/team-sully.png" alt="Jim Sully Sullivan" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\'byline-avatar\' style=\'background:var(--color-primary);\'>JS</div>'">
                     <div class="byline-info">
-                      <span class="byline-name">Margaret Kowalski</span>
-                      <span>Senior Finance Reporter</span>
+                      <span class="byline-name">Jim "Sully" Sullivan</span>
+                      <span>Editor-in-Chief</span>
                     </div>
                   </div>
                   <div class="card-meta">
                     <div class="card-meta-left">
                       <span class="read-time-badge">⏱ 4 min</span>
-                      <span>Apr 8, 2026</span>
+                      <span>Apr 22, 2026</span>
                     </div>
                   </div>
                 </div>
@@ -325,20 +455,20 @@
           <section class="articles-section" aria-label="Consumer Rights articles">
             <div class="section-header">
               <h2 class="section-title">⚖️ Consumer Rights</h2>
-              <a href="#" class="view-all">See All →</a>
+              <a href="articles/medicare-scams-buffalo.html" class="view-all">See All →</a>
             </div>
             <div class="article-grid article-grid--featured">
               <article class="article-card card--featured">
                 <div class="card-image" style="background: linear-gradient(135deg,#2d1a3a,#5c3a7a); min-height: 260px;"></div>
                 <div class="card-body">
-                  <a href="#" class="card-category">⚖️ Consumer Rights</a>
-                  <a href="#" class="card-title">New Medicare Scam Is Targeting WNY Seniors by Phone — Here Are the Exact Warning Signs</a>
+                  <a href="articles/medicare-scams-buffalo.html" class="card-category">⚖️ Consumer Rights</a>
+                  <a href="articles/medicare-scams-buffalo.html" class="card-title">New Medicare Scam Is Targeting WNY Seniors by Phone — Here Are the Exact Warning Signs</a>
                   <p class="card-excerpt">Callers are claiming to be from Medicare and asking for your Social Security number to send a "new card." It's happening every day in Erie County — here's exactly what to say.</p>
                   <div class="card-byline">
-                    <div class="byline-avatar">RV</div>
+                    <img src="images/team-sully.png" alt="Jim Sully Sullivan" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\'byline-avatar\' style=\'background:var(--color-primary);\'>JS</div>'">
                     <div class="byline-info">
-                      <span class="byline-name">Robert Vitale</span>
-                      <span>Consumer Rights Correspondent</span>
+                      <span class="byline-name">Jim "Sully" Sullivan</span>
+                      <span>Editor-in-Chief</span>
                     </div>
                   </div>
                   <div class="card-meta">
@@ -352,40 +482,40 @@
               </article>
               <article class="article-card">
                 <div class="card-body">
-                  <a href="#" class="card-category">⚖️ Consumer Rights</a>
-                  <a href="#" class="card-title">That "Social Security Text Alert" Is Almost Always a Scam — What Legitimate Agencies Actually Do</a>
+                  <a href="articles/social-security-text-scam.html" class="card-category">⚖️ Consumer Rights</a>
+                  <a href="articles/social-security-text-scam.html" class="card-title">That "Social Security Text Alert" Is Almost Always a Scam — What Legitimate Agencies Actually Do</a>
                   <p class="card-excerpt">Federal agencies will never text you asking for personal information. Here's the complete list of red flags — and exactly what to do if you get one.</p>
                   <div class="card-byline">
-                    <div class="byline-avatar">RV</div>
+                    <img src="images/team-sully.png" alt="Jim Sully Sullivan" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\'byline-avatar\' style=\'background:var(--color-primary);\'>JS</div>'">
                     <div class="byline-info">
-                      <span class="byline-name">Robert Vitale</span>
-                      <span>Consumer Rights Correspondent</span>
+                      <span class="byline-name">Jim "Sully" Sullivan</span>
+                      <span>Editor-in-Chief</span>
                     </div>
                   </div>
                   <div class="card-meta">
                     <div class="card-meta-left">
                       <span class="read-time-badge">⏱ 5 min</span>
-                      <span>Apr 15, 2026</span>
+                      <span>Apr 19, 2026</span>
                     </div>
                   </div>
                 </div>
               </article>
               <article class="article-card">
                 <div class="card-body">
-                  <a href="#" class="card-category">⚖️ Consumer Rights</a>
-                  <a href="#" class="card-title">Buffalo Renters Over 55: Here Are Your Legal Rights That Most Landlords Count On You Not Knowing</a>
+                  <a href="articles/tenant-rights-buffalo.html" class="card-category">⚖️ Consumer Rights</a>
+                  <a href="articles/tenant-rights-buffalo.html" class="card-title">Buffalo Renters Over 55: Here Are Your Legal Rights That Most Landlords Count On You Not Knowing</a>
                   <p class="card-excerpt">NY State protects senior renters in ways that go well beyond standard tenants. Your landlord probably hasn't mentioned any of them.</p>
                   <div class="card-byline">
-                    <div class="byline-avatar">RV</div>
+                    <img src="images/team-sully.png" alt="Jim Sully Sullivan" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\'byline-avatar\' style=\'background:var(--color-primary);\'>JS</div>'">
                     <div class="byline-info">
-                      <span class="byline-name">Robert Vitale</span>
-                      <span>Consumer Rights Correspondent</span>
+                      <span class="byline-name">Jim "Sully" Sullivan</span>
+                      <span>Editor-in-Chief</span>
                     </div>
                   </div>
                   <div class="card-meta">
                     <div class="card-meta-left">
                       <span class="read-time-badge">⏱ 6 min</span>
-                      <span>Apr 11, 2026</span>
+                      <span>Apr 20, 2026</span>
                     </div>
                   </div>
                 </div>
@@ -409,10 +539,10 @@
                   <a href="articles/attic-treasure.html" class="card-title">Buffalo Antique Dealers Are Paying Big for These 9 Items — Check Your Attic Before You Toss Them</a>
                   <p class="card-excerpt">From vintage Bills Super Bowl merchandise to old Kodak cameras made in nearby Rochester — if you grew up in WNY, you may be sitting on hundreds of dollars.</p>
                   <div class="card-byline">
-                    <div class="byline-avatar">PH</div>
+                    <img src="images/team-vinnie.png" alt="Vinnie DiPaolo" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\'byline-avatar\' style=\'background:var(--color-gold);\'>VD</div>'">
                     <div class="byline-info">
-                      <span class="byline-name">Patricia Hernandez</span>
-                      <span>Nostalgia &amp; Collectibles Editor</span>
+                      <span class="byline-name">Vinnie DiPaolo</span>
+                      <span>Nostalgia &amp; Home Editor</span>
                     </div>
                   </div>
                   <div class="card-meta">
@@ -426,40 +556,112 @@
               </article>
               <article class="article-card">
                 <div class="card-body">
-                  <a href="#" class="card-category">🏺 Nostalgia</a>
-                  <a href="#" class="card-title">The Old "Hens &amp; Kelly" Shopping Bags Are Selling for $80 on eBay — And That's Just the Beginning</a>
+                  <a href="articles/buffalo-department-stores.html" class="card-category">🏺 Nostalgia</a>
+                  <a href="articles/buffalo-department-stores.html" class="card-title">The Old "Hens &amp; Kelly" Shopping Bags Are Selling for $80 on eBay — And That's Just the Beginning</a>
                   <p class="card-excerpt">Buffalo's defunct department stores have a cult following. Collectors across the country are buying up WNY retail nostalgia at surprising prices.</p>
                   <div class="card-byline">
-                    <div class="byline-avatar">PH</div>
+                    <img src="images/team-vinnie.png" alt="Vinnie DiPaolo" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\'byline-avatar\' style=\'background:var(--color-gold);\'>VD</div>'">
                     <div class="byline-info">
-                      <span class="byline-name">Patricia Hernandez</span>
-                      <span>Nostalgia &amp; Collectibles Editor</span>
+                      <span class="byline-name">Vinnie DiPaolo</span>
+                      <span>Nostalgia &amp; Home Editor</span>
                     </div>
                   </div>
                   <div class="card-meta">
                     <div class="card-meta-left">
                       <span class="read-time-badge">⏱ 5 min</span>
-                      <span>Apr 13, 2026</span>
+                      <span>Apr 23, 2026</span>
                     </div>
                   </div>
                 </div>
               </article>
               <article class="article-card">
                 <div class="card-body">
-                  <a href="#" class="card-category">🏺 Nostalgia</a>
-                  <a href="#" class="card-title">The 1970s Polaroid Camera in Your Garage Could Be Worth More Than Your TV</a>
+                  <a href="articles/polaroid-camera-value.html" class="card-category">🏺 Nostalgia</a>
+                  <a href="articles/polaroid-camera-value.html" class="card-title">The 1970s Polaroid Camera in Your Garage Could Be Worth More Than Your TV</a>
                   <p class="card-excerpt">Film photography's resurgence has vintage camera prices surging. That old Polaroid SX-70 in a shoe box might fetch $150–$400 today.</p>
                   <div class="card-byline">
-                    <div class="byline-avatar">PH</div>
+                    <img src="images/team-vinnie.png" alt="Vinnie DiPaolo" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\'byline-avatar\' style=\'background:var(--color-gold);\'>VD</div>'">
                     <div class="byline-info">
-                      <span class="byline-name">Patricia Hernandez</span>
-                      <span>Nostalgia &amp; Collectibles Editor</span>
+                      <span class="byline-name">Vinnie DiPaolo</span>
+                      <span>Nostalgia &amp; Home Editor</span>
                     </div>
                   </div>
                   <div class="card-meta">
                     <div class="card-meta-left">
                       <span class="read-time-badge">⏱ 6 min</span>
-                      <span>Apr 9, 2026</span>
+                      <span>Apr 24, 2026</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- DIY & Home Section -->
+          <section class="articles-section" aria-label="DIY and Home articles">
+            <div class="section-header">
+              <h2 class="section-title">🔧 DIY &amp; Home</h2>
+              <a href="articles/furnace-maintenance-buffalo.html" class="view-all">See All →</a>
+            </div>
+            <div class="article-grid article-grid--featured">
+              <article class="article-card card--featured">
+                <div class="card-image" style="background: linear-gradient(135deg,#1a3a1e,#2d5a32); min-height: 260px;"></div>
+                <div class="card-body">
+                  <a href="articles/buffalo-winter-home-prep.html" class="card-category">🔧 DIY &amp; Home</a>
+                  <a href="articles/buffalo-winter-home-prep.html" class="card-title">Buffalo Winter Home Prep: 11 Things You Must Do Before November — From a Contractor Who's Done It 400 Times</a>
+                  <p class="card-excerpt">Vinnie DiPaolo has winterized homes across Erie County for 35 years. Here's his personal checklist — the stuff that actually matters in WNY winters.</p>
+                  <div class="card-byline">
+                    <img src="images/team-vinnie.png" alt="Vinnie DiPaolo" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\'byline-avatar\' style=\'background:var(--color-gold);\'>VD</div>'">
+                    <div class="byline-info">
+                      <span class="byline-name">Vinnie DiPaolo</span>
+                      <span>Nostalgia &amp; Home Editor</span>
+                    </div>
+                  </div>
+                  <div class="card-meta">
+                    <div class="card-meta-left">
+                      <span class="read-time-badge">⏱ 8 min</span>
+                      <span>Apr 25, 2026</span>
+                    </div>
+                    <span>📍 Erie County, NY</span>
+                  </div>
+                </div>
+              </article>
+              <article class="article-card">
+                <div class="card-body">
+                  <a href="articles/furnace-maintenance-buffalo.html" class="card-category">🔧 DIY</a>
+                  <a href="articles/furnace-maintenance-buffalo.html" class="card-title">Your Buffalo Furnace: What to Check Every Fall So You're Not Calling a Repairman in January</a>
+                  <p class="card-excerpt">Most furnace failures in WNY happen in January. They're mostly preventable. Vinnie walks through the checks every homeowner should do before the cold hits.</p>
+                  <div class="card-byline">
+                    <img src="images/team-vinnie.png" alt="Vinnie DiPaolo" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\'byline-avatar\' style=\'background:var(--color-gold);\'>VD</div>'">
+                    <div class="byline-info">
+                      <span class="byline-name">Vinnie DiPaolo</span>
+                      <span>Nostalgia &amp; Home Editor</span>
+                    </div>
+                  </div>
+                  <div class="card-meta">
+                    <div class="card-meta-left">
+                      <span class="read-time-badge">⏱ 6 min</span>
+                      <span>Apr 25, 2026</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="article-card">
+                <div class="card-body">
+                  <a href="articles/ice-dam-prevention.html" class="card-category">🔧 DIY</a>
+                  <a href="articles/ice-dam-prevention.html" class="card-title">Ice Dams Are Destroying Buffalo Roofs Every Winter — Here's How to Stop Them</a>
+                  <p class="card-excerpt">Vinnie has fixed ice dam damage on hundreds of WNY homes. Most of it was entirely preventable with a few simple steps before the snow hits.</p>
+                  <div class="card-byline">
+                    <img src="images/team-vinnie.png" alt="Vinnie DiPaolo" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\'byline-avatar\' style=\'background:var(--color-gold);\'>VD</div>'">
+                    <div class="byline-info">
+                      <span class="byline-name">Vinnie DiPaolo</span>
+                      <span>Nostalgia &amp; Home Editor</span>
+                    </div>
+                  </div>
+                  <div class="card-meta">
+                    <div class="card-meta-left">
+                      <span class="read-time-badge">⏱ 5 min</span>
+                      <span>Apr 26, 2026</span>
                     </div>
                   </div>
                 </div>
@@ -508,11 +710,11 @@
                 </li>
                 <li class="most-read-item">
                   <span class="most-read-num">4</span>
-                  <a href="#" class="most-read-title">National Fuel's Secret Senior Rate Most Don't Know to Ask For</a>
+                  <a href="articles/national-fuel-senior-rate.html" class="most-read-title">National Fuel's Secret Senior Rate Most Don't Know to Ask For</a>
                 </li>
                 <li class="most-read-item">
                   <span class="most-read-num">5</span>
-                  <a href="#" class="most-read-title">The New Medicare Phone Scam Targeting WNY Seniors</a>
+                  <a href="articles/medicare-scams-buffalo.html" class="most-read-title">The New Medicare Phone Scam Targeting WNY Seniors</a>
                 </li>
               </ol>
             </div>
@@ -545,11 +747,11 @@
                 <a href="articles/health-biological-age.html" class="cat-pill">❤️ Health</a>
                 <a href="articles/buffalo-hidden-money.html" class="cat-pill">💰 Money</a>
                 <a href="articles/attic-treasure.html" class="cat-pill">🏺 Collectibles</a>
-                <a href="#" class="cat-pill">⚖️ Legal Rights</a>
-                <a href="#" class="cat-pill">🔧 Home &amp; DIY</a>
-                <a href="#" class="cat-pill">🦁 Medicare</a>
-                <a href="#" class="cat-pill">✈️ Travel</a>
-                <a href="#" class="cat-pill">👴 Veterans</a>
+                <a href="articles/tenant-rights-buffalo.html" class="cat-pill">⚖️ Legal Rights</a>
+                <a href="articles/furnace-maintenance-buffalo.html" class="cat-pill">🔧 Home &amp; DIY</a>
+                <a href="articles/medicare-scams-buffalo.html" class="cat-pill">🦁 Medicare</a>
+                <a href="articles/walking-vs-gym-seniors.html" class="cat-pill">🚶 Walking</a>
+                <a href="articles/veterans-benefits-buffalo.html" class="cat-pill">👴 Veterans</a>
               </div>
             </div>
           </div>
@@ -559,34 +761,27 @@
             <div class="widget-header">✍️ Our Writers</div>
             <div class="widget-body" style="display:flex;flex-direction:column;gap:var(--space-5);">
               <div style="display:flex;align-items:center;gap:var(--space-3);">
-                <div class="byline-avatar" style="width:44px;height:44px;font-size:14px;background:var(--color-primary);color:#fff;">MK</div>
+                <img src="images/team-sully.png" alt="Jim Sully Sullivan" style="width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\'byline-avatar\' style=\'width:44px;height:44px;font-size:14px;background:var(--color-primary);color:#fff;\'>JS</div>'">
                 <div>
-                  <div style="font-weight:700;font-size:var(--text-sm);color:var(--color-text);">Margaret Kowalski</div>
-                  <div style="font-size:var(--text-xs);color:var(--color-text-muted);">Senior Finance Reporter</div>
+                  <div style="font-weight:700;font-size:var(--text-sm);color:var(--color-text);">Jim "Sully" Sullivan</div>
+                  <div style="font-size:var(--text-xs);color:var(--color-text-muted);">Editor-in-Chief</div>
                 </div>
               </div>
               <div style="display:flex;align-items:center;gap:var(--space-3);">
-                <div class="byline-avatar" style="width:44px;height:44px;font-size:14px;background:var(--color-accent);color:#fff;">DM</div>
+                <img src="images/team-barb.png" alt="Barb Miller" style="width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\'byline-avatar\' style=\'width:44px;height:44px;font-size:14px;background:var(--color-accent);color:#fff;\'>BM</div>'">
                 <div>
-                  <div style="font-weight:700;font-size:var(--text-sm);color:var(--color-text);">Dr. Diane Moretti</div>
-                  <div style="font-size:var(--text-xs);color:var(--color-text-muted);">Health &amp; Wellness Editor</div>
+                  <div style="font-weight:700;font-size:var(--text-sm);color:var(--color-text);">Barb Miller</div>
+                  <div style="font-size:var(--text-xs);color:var(--color-text-muted);">Health &amp; Lifestyle Editor</div>
                 </div>
               </div>
               <div style="display:flex;align-items:center;gap:var(--space-3);">
-                <div class="byline-avatar" style="width:44px;height:44px;font-size:14px;background:var(--color-gold);color:#fff;">RV</div>
+                <img src="images/team-vinnie.png" alt="Vinnie DiPaolo" style="width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\'byline-avatar\' style=\'width:44px;height:44px;font-size:14px;background:var(--color-gold);color:#fff;\'>VD</div>'">
                 <div>
-                  <div style="font-weight:700;font-size:var(--text-sm);color:var(--color-text);">Robert Vitale</div>
-                  <div style="font-size:var(--text-xs);color:var(--color-text-muted);">Consumer Rights Correspondent</div>
+                  <div style="font-weight:700;font-size:var(--text-sm);color:var(--color-text);">Vinnie DiPaolo</div>
+                  <div style="font-size:var(--text-xs);color:var(--color-text-muted);">Nostalgia &amp; Home Editor</div>
                 </div>
               </div>
-              <div style="display:flex;align-items:center;gap:var(--space-3);">
-                <div class="byline-avatar" style="width:44px;height:44px;font-size:14px;background:var(--color-primary-hover);color:#fff;">PH</div>
-                <div>
-                  <div style="font-weight:700;font-size:var(--text-sm);color:var(--color-text);">Patricia Hernandez</div>
-                  <div style="font-size:var(--text-xs);color:var(--color-text-muted);">Nostalgia &amp; Collectibles Editor</div>
-                </div>
-              </div>
-              <a href="about.html" class="btn-secondary" style="text-align:center;justify-content:center;font-size:var(--text-sm);padding:var(--space-3) var(--space-4);">Meet the Full Team →</a>
+              <a href="team.html" class="btn-secondary" style="text-align:center;justify-content:center;font-size:var(--text-sm);padding:var(--space-3) var(--space-4);">Meet the Full Team →</a>
             </div>
           </div>
 
@@ -613,8 +808,8 @@
             <li><a href="articles/health-biological-age.html">Health &amp; Longevity</a></li>
             <li><a href="articles/buffalo-hidden-money.html">Local Money &amp; Benefits</a></li>
             <li><a href="articles/attic-treasure.html">Nostalgia &amp; Collectibles</a></li>
-            <li><a href="#">Consumer Rights</a></li>
-            <li><a href="#">DIY &amp; Home</a></li>
+            <li><a href="articles/medicare-scams-buffalo.html">Consumer Rights</a></li>
+            <li><a href="articles/furnace-maintenance-buffalo.html">DIY &amp; Home</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -630,16 +825,16 @@
           <h4>Silver Buffalo News</h4>
           <ul class="footer-links">
             <li><a href="about.html">About Us</a></li>
+            <li><a href="team.html">Our Team</a></li>
             <li><a href="mailto:editor@silverbuffalonews.com">Contact Us</a></li>
-            <li><a href="#">Advertise With Us</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
         <span>© 2026 Silver Buffalo News. All rights reserved. Buffalo, New York.</span>
-        <span>Content for informational purposes only. Not affiliated with Erie County government.</span>
+        <span><a href="privacy.html" style="color:rgba(255,255,255,0.6);">Privacy Policy</a> · <a href="terms.html" style="color:rgba(255,255,255,0.6);">Terms of Use</a></span>
       </div>
     </div>
   </footer>

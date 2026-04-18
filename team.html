@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet the Team — Silver Buffalo News</title>
+  <meta name="description" content="Meet the retired Buffalo professionals behind Silver Buffalo News — Jim 'Sully' Sullivan, Barb Miller, and Vinnie DiPaolo. Real people, real Buffalo roots.">
+  <link rel="canonical" href="https://silverbuffalonews.com/team.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "Meet the Team — Silver Buffalo News",
+    "url": "https://silverbuffalonews.com/team.html",
+    "description": "The editorial team behind Silver Buffalo News — retired Buffalo professionals writing for Western New York seniors 55+",
+    "publisher": {
+      "@type": "NewsMediaOrganization",
+      "name": "Silver Buffalo News",
+      "url": "https://silverbuffalonews.com/"
+    }
+  }
+  </script>
+
+  <style>
+    /* ── Team Page Styles ───────────────────────────────── */
+    .team-hero {
+      background: linear-gradient(135deg, var(--color-primary) 0%, #0f2347 100%);
+      color: #fff;
+      padding: var(--space-16) 0 var(--space-12);
+      text-align: center;
+    }
+    .team-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: var(--space-4);
+    }
+    .team-hero p {
+      font-size: clamp(1.05rem, 2vw, 1.2rem);
+      color: rgba(255,255,255,0.85);
+      max-width: 640px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .team-hero .hero-eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: var(--space-3);
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-12);
+      padding: var(--space-12) 0;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .team-card {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: var(--space-8);
+      background: var(--color-surface);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      transition: box-shadow 0.2s ease;
+    }
+    .team-card:hover {
+      box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+    }
+
+    .team-card-photo {
+      position: relative;
+      overflow: hidden;
+    }
+    .team-card-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      min-height: 280px;
+    }
+    .team-card-photo-fallback {
+      width: 100%;
+      min-height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      font-weight: 800;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .team-card-body {
+      padding: var(--space-7) var(--space-7) var(--space-7) 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .team-beat-badge {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-bottom: var(--space-3);
+    }
+    .badge-sully {
+      background: rgba(26,58,107,0.12);
+      color: var(--color-primary);
+      border: 1px solid rgba(26,58,107,0.2);
+    }
+    .badge-barb {
+      background: rgba(0,128,96,0.1);
+      color: #00705a;
+      border: 1px solid rgba(0,128,96,0.2);
+    }
+    .badge-vinnie {
+      background: rgba(160,116,8,0.1);
+      color: var(--color-gold);
+      border: 1px solid rgba(160,116,8,0.2);
+    }
+
+    .team-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: var(--color-heading);
+      margin-bottom: var(--space-1);
+      line-height: 1.2;
+    }
+    .team-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-4);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .team-bio {
+      font-family: 'Source Serif 4', serif;
+      font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+      line-height: 1.75;
+      color: var(--color-text);
+      margin-bottom: var(--space-5);
+    }
+
+    .team-beats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      margin-bottom: var(--space-5);
+    }
+    .beat-tag {
+      background: var(--color-bg-alt, #f5f5f0);
+      color: var(--color-text-muted);
+      font-size: 0.78rem;
+      font-family: 'Inter', sans-serif;
+      padding: 3px 10px;
+      border-radius: 20px;
+      border: 1px solid var(--color-border);
+    }
+
+    .team-quote {
+      border-left: 3px solid var(--color-primary);
+      padding-left: var(--space-4);
+      font-family: 'Source Serif 4', serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--color-text-muted);
+      line-height: 1.65;
+    }
+
+    /* Founding Note */
+    .founding-note {
+      background: linear-gradient(135deg, #fef9ec 0%, #fffdf5 100%);
+      border: 1px solid rgba(160,116,8,0.2);
+      border-radius: 14px;
+      padding: var(--space-8) var(--space-10);
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto var(--space-16);
+    }
+    .founding-note h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--color-heading);
+      margin-bottom: var(--space-4);
+    }
+    .founding-note p {
+      font-family: 'Source Serif 4', serif;
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--color-text);
+    }
+    .founding-note .founding-sig {
+      margin-top: var(--space-5);
+      font-weight: 600;
+      font-style: italic;
+      color: var(--color-primary);
+      font-size: 1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      .team-card {
+        grid-template-columns: 1fr;
+      }
+      .team-card-photo img {
+        min-height: 260px;
+        max-height: 300px;
+        width: 100%;
+      }
+      .team-card-body {
+        padding: var(--space-6);
+      }
+    }
+
+    [data-theme="dark"] .founding-note {
+      background: linear-gradient(135deg, rgba(160,116,8,0.08) 0%, rgba(160,116,8,0.04) 100%);
+    }
+    [data-theme="dark"] .beat-tag {
+      background: rgba(255,255,255,0.06);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="header-top-bar" role="banner">
+    <div class="container">
+      🦬 Western New York's Trusted News Source for Residents 55+ &nbsp;·&nbsp; April 2026 Edition &nbsp;·&nbsp; Buffalo, NY
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="site-logo" aria-label="Silver Buffalo News home">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <rect width="48" height="48" rx="10" fill="var(--color-primary)"/>
+            <path d="M11 30 C11 30 9 26 11 22 C13 17 15 16 17 17 C18 15 19 13 21 13 C23 13 24 12 25 13 C27 12 29 13 30 15 C31 13 33 13 34 15 C36 16 37 18 36 22 C37 24 37 27 35 29 C34 31 32 32 29 32 L17 32 C14 32 12 31 11 30Z" fill="white" opacity="0.92"/>
+            <path d="M35 22 L38 20 M36 22 L40 21" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            <text x="24" y="43" text-anchor="middle" font-family="serif" font-size="8" font-weight="700" fill="white" opacity="0.85">NEWS</text>
+          </svg>
+          <div class="logo-text">
+            <span class="logo-name">Silver Buffalo News</span>
+            <span class="logo-tagline">Western New York · Est. 2026</span>
+          </div>
+        </a>
+
+        <nav class="site-nav" id="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="articles/health-biological-age.html">Health</a>
+          <a href="articles/buffalo-hidden-money.html">Money</a>
+          <a href="articles/attic-treasure.html">Nostalgia</a>
+          <a href="about.html">About Us</a>
+          <a href="team.html" class="active">Our Team</a>
+          <a href="index.html#newsletter">Newsletter</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="btn-theme" data-theme-toggle aria-label="Toggle dark mode" title="Toggle dark mode"></button>
+          <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Team Hero -->
+  <div class="team-hero">
+    <div class="container">
+      <div class="hero-eyebrow">Silver Buffalo News Editorial Team</div>
+      <h1>We're Your Neighbors.<br>We've Lived This Too.</h1>
+      <p>Three retired Buffalo professionals who got tired of seeing seniors in WNY miss out on money, health knowledge, and the stories that matter most. So we started writing them ourselves.</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div class="container">
+      <div class="team-grid">
+
+        <!-- Sully -->
+        <div class="team-card">
+          <div class="team-card-photo">
+            <img
+              src="images/team-sully.png"
+              alt="Jim 'Sully' Sullivan, Editor-in-Chief of Silver Buffalo News, retired investigative reporter from South Buffalo"
+              width="220"
+              height="320"
+              loading="eager"
+              onerror="this.parentElement.innerHTML='<div class=\'team-card-photo-fallback\' style=\'background:linear-gradient(135deg,#1a3a6b,#0f2347);\'>JS</div>'"
+            >
+          </div>
+          <div class="team-card-body">
+            <span class="team-beat-badge badge-sully">Editor-in-Chief</span>
+            <h2 class="team-name">Jim "Sully" Sullivan</h2>
+            <div class="team-title">Finance · Consumer Rights · Local Scams · Veterans</div>
+            <p class="team-bio">
+              Jim Sullivan spent 31 years as an investigative reporter in Buffalo before retiring to South Buffalo, where he still keeps a scanner on his kitchen counter. He co-founded Silver Buffalo News because someone had to — and because retirement was making him crazy.
+            </p>
+            <p class="team-bio">
+              Sully covers the money stuff: benefit programs the county doesn't advertise, Medicare scams targeting WNY seniors, and anything that smells like someone is taking advantage of the people he grew up with in this city. He's blunt. He's protective. And he does not like to waste your time.
+            </p>
+            <div class="team-beats">
+              <span class="beat-tag">💰 Local Finance</span>
+              <span class="beat-tag">⚖️ Consumer Rights</span>
+              <span class="beat-tag">🦁 Medicare</span>
+              <span class="beat-tag">👴 Veterans</span>
+              <span class="beat-tag">📋 Tax & Benefits</span>
+            </div>
+            <div class="team-quote">
+              "If the county was spending half as much energy advertising these programs as they spend holding ribbon-cuttings, we wouldn't need this website."
+            </div>
+          </div>
+        </div>
+
+        <!-- Barb -->
+        <div class="team-card">
+          <div class="team-card-photo">
+            <img
+              src="images/team-barb.png"
+              alt="Barb Miller, Health & Lifestyle Editor at Silver Buffalo News, retired nurse from Amherst NY"
+              width="220"
+              height="320"
+              loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=\'team-card-photo-fallback\' style=\'background:linear-gradient(135deg,#00705a,#004a3a);\'>BM</div>'"
+            >
+          </div>
+          <div class="team-card-body">
+            <span class="team-beat-badge badge-barb">Health &amp; Lifestyle Editor</span>
+            <h2 class="team-name">Barb Miller</h2>
+            <div class="team-title">Longevity · Sleep · Hearing · Wellness · Walking</div>
+            <p class="team-bio">
+              Barb Miller is a retired RN who spent 28 years at Erie County Medical Center and still volunteers there on Tuesdays. She lives in Amherst with her husband and is grandmother to four kids who she claims eat too much processed food.
+            </p>
+            <p class="team-bio">
+              When Barb started reading what passed for "senior health advice" online, she just about threw her laptop. The articles were either written by people who'd never set foot in a hospital, or buried in jargon that assumed you had a medical degree. She writes the health section the way she talked to her patients: plain, practical, and honest.
+            </p>
+            <div class="team-beats">
+              <span class="beat-tag">❤️ Health & Longevity</span>
+              <span class="beat-tag">😴 Sleep</span>
+              <span class="beat-tag">👂 Hearing</span>
+              <span class="beat-tag">🚶 Walking & Fitness</span>
+              <span class="beat-tag">🥗 Nutrition</span>
+            </div>
+            <div class="team-quote">
+              "I'm not going to tell you to 'consult your doctor' and leave it at that. You deserve to actually understand what's happening in your body."
+            </div>
+          </div>
+        </div>
+
+        <!-- Vinnie -->
+        <div class="team-card">
+          <div class="team-card-photo">
+            <img
+              src="images/team-vinnie.png"
+              alt="Vinnie DiPaolo, Nostalgia & Home Editor at Silver Buffalo News, retired contractor from Erie County"
+              width="220"
+              height="320"
+              loading="lazy"
+              onerror="this.parentElement.innerHTML='<div class=\'team-card-photo-fallback\' style=\'background:linear-gradient(135deg,#a07408,#7a5600);\'>VD</div>'"
+            >
+          </div>
+          <div class="team-card-body">
+            <span class="team-beat-badge badge-vinnie">Nostalgia &amp; Home Editor</span>
+            <h2 class="team-name">Vinnie DiPaolo</h2>
+            <div class="team-title">Collectibles · DIY · Buffalo History · Home Prep</div>
+            <p class="team-bio">
+              Vinnie DiPaolo renovated over 400 homes across Erie County in a 35-year contracting career. Now retired, he spends his time at estate sales, writing about Buffalo history, and arguing with his sons about the Bills' offensive line.
+            </p>
+            <p class="team-bio">
+              Vinnie knows every Victorian on the West Side and can tell you which furnace brand is still running after 25 Buffalo winters. His nostalgia pieces started as long emails to his kids about "the way things were" — and when his daughter told him he should write for other people, he figured why not. He knows his stuff.
+            </p>
+            <div class="team-beats">
+              <span class="beat-tag">🏺 Nostalgia</span>
+              <span class="beat-tag">🎵 Collectibles</span>
+              <span class="beat-tag">🔧 DIY & Home</span>
+              <span class="beat-tag">🏠 Buffalo History</span>
+              <span class="beat-tag">❄️ Winter Prep</span>
+            </div>
+            <div class="team-quote">
+              "I've been in basements and attics all over this city. Half of what gets thrown out at estate sales around here is worth real money. I'm just trying to tell people before it goes to the dumpster."
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /team-grid -->
+
+      <!-- Founding Note -->
+      <div class="founding-note">
+        <h2>Why We Started This</h2>
+        <p>
+          We didn't start Silver Buffalo News because we wanted to be in media. We started it because we kept seeing the same thing: people who'd spent 35 years working in this city reaching their 60s and 70s without knowing what they were entitled to. Programs that existed, benefits that went unclaimed, scams that worked because nobody was warning people.
+        </p>
+        <p style="margin-top: var(--space-4);">
+          This isn't a corporate outlet. Nobody owns us. We cover what matters to people who live in WNY — and we say what we actually think.
+        </p>
+        <div class="founding-sig">— Sully, Barb &amp; Vinnie · Buffalo, NY · 2026</div>
+      </div>
+
+    </div><!-- /container -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="disclaimer">
+        <strong style="color:rgba(255,255,255,0.8);">Editorial Note:</strong> Silver Buffalo News provides general information for educational purposes only. Financial benefit programs, health information, and collectibles values change frequently — always verify details directly with Erie County agencies or relevant authorities before making decisions. We are not financial advisors, medical professionals, or attorneys.
+      </div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-name">Silver Buffalo News</div>
+          <p>Western New York's trusted news source for residents 55+. Serving Buffalo and Erie County since 2026.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="articles/health-biological-age.html">Health &amp; Longevity</a></li>
+            <li><a href="articles/buffalo-hidden-money.html">Local Money &amp; Benefits</a></li>
+            <li><a href="articles/attic-treasure.html">Nostalgia &amp; Collectibles</a></li>
+            <li><a href="articles/medicare-scams-buffalo.html">Consumer Rights</a></li>
+            <li><a href="articles/furnace-maintenance-buffalo.html">DIY &amp; Home</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Silver Buffalo News</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="mailto:editor@silverbuffalonews.com">Contact Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="https://www3.erie.gov/aging/" target="_blank" rel="noopener">Erie County Aging Dept.</a></li>
+            <li><a href="https://www.nysenior.org" target="_blank" rel="noopener">NY Senior Action Council</a></li>
+            <li><a href="https://www.benefitscheckup.org" target="_blank" rel="noopener">Benefits Checkup Tool</a></li>
+            <li><a href="https://www3.erie.gov/heap/" target="_blank" rel="noopener">Erie County HEAP</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Silver Buffalo News. All rights reserved. Buffalo, New York.</span>
+        <span><a href="privacy.html" style="color:rgba(255,255,255,0.6);">Privacy Policy</a> · <a href="terms.html" style="color:rgba(255,255,255,0.6);">Terms of Use</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
