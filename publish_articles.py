@@ -504,7 +504,7 @@ def build_article_html(item, content, image_file):
             <h1 class="article-h1">{headline}</h1>
             <p class="article-deck">{deck}</p>
             <div class="article-byline">
-              <div class="author-avatar" style="background:{wm['color']}">{wm['initials']}</div>
+              <img src="../images/team-{writer}.png" alt="{wm['name']}" width="52" height="52" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" loading="lazy" onerror="this.outerHTML='<div style=\'width:52px;height:52px;border-radius:50%;background:{wm[\'color\']};display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px;flex-shrink:0;\'>{wm[\'initials\']}</div>'">
               <div>
                 <div class="author-name">{wm['name']}{ai_badge}</div>
                 <div class="author-title">{wm['title']}</div>
@@ -649,8 +649,8 @@ def build_card_html(item, image_file, deck):
                     <h3 class="card-title"><a href="articles/{slug}.html">{headline}</a></h3>
                     <p class="card-excerpt">{excerpt}</p>
                     <div class="card-byline">
-                      <span class="byline-avatar" style="background:{wm['color']}">{wm['initials']}</span>
-                      <span>{wm['name']} · {TODAY}</span>
+                      <img src="images/team-{writer}.png" alt="{wm['name']}" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\"byline-avatar\" style=\"background:{wm[\"color\"]};\">{wm[\"initials\"]}</div>'">
+                      <div class="byline-info"><span class="byline-name">{wm['name']}</span><span class="byline-date">{TODAY}</span></div>
                     </div>
                   </div>
                 </article>"""
