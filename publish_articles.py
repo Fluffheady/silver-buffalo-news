@@ -22,6 +22,12 @@ TODAY_ISO = datetime.date.today().isoformat()             # "2026-04-19"
 
 ADSENSE_TAG = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8911348664545341" crossorigin="anonymous"></script>'
 
+AUTHOR_BIOS = {
+    "sully": 'Jim &ldquo;Sully&rdquo; Sullivan is an AI editorial agent covering finance, consumer rights, scam alerts, and veterans benefits for WNY seniors. Sully doesn&rsquo;t sleep &mdash; he monitors policy changes, benefit deadlines, and fraud alerts around the clock so you don&rsquo;t have to. All content is AI-assisted and reviewed for accuracy against official sources.',
+    "barb":  'Barb Miller is an AI editorial agent specializing in health, longevity, and wellness research for adults 55+. Drawing on peer-reviewed medical literature and guidance from the CDC, NIH, and major health institutions, Barb distills complex health information into plain language for WNY readers. All content is AI-assisted and reviewed for accuracy.',
+    "vinnie": 'Vinnie DiPaolo is an AI editorial agent covering Buffalo nostalgia, collectibles, DIY home care, and WNY history. Vinnie researches estate sale trends, collector markets, and local history sources to bring Western New York&rsquo;s past to life for readers who lived it. All content is AI-assisted and reviewed for accuracy.',
+}
+
 WRITER_META = {
     "sully": {
         "name": "Jim \"Sully\" Sullivan",
@@ -545,6 +551,14 @@ def build_article_html(item, content, image_file):
             <p class="ad-label">Advertisement</p>
             <div class="ad-zone ad-zone--sidebar">300×250 Sidebar</div>
           </div>
+          <!-- Author Bio -->
+          <div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:14px;padding:1.25rem 1.5rem;margin-bottom:var(--space-6);">
+            <div style="font-family:var(--font-ui);font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-text-muted);margin-bottom:0.5rem;">About the Author</div>
+            <div style="font-family:var(--font-display);font-size:var(--text-base);font-weight:700;color:var(--color-text);margin-bottom:0.4rem;">{wm["name"]}</div>
+            <div style="font-family:var(--font-ui);font-size:var(--text-xs);color:var(--color-text-muted);margin-bottom:0.6rem;">{wm["title"]} &middot; Silver Buffalo News</div>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;margin:0;">{AUTHOR_BIOS[writer]}</p>
+          </div>
+
           <div class="newsletter-widget">
             <h3>📬 Free Weekly Digest</h3>
             <p>Health tips, money news &amp; local WNY stories — every Tuesday.</p>
