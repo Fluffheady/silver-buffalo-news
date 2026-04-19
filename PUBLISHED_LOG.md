@@ -6,3 +6,6 @@
 sully-001 | sully | 2026-04-18
 barb-001 | barb | 2026-04-18
 vinnie-001 | vinnie | 2026-04-18
+sully-002 | sully | 2026-04-19
+barb-002 | barb | 2026-04-19
+vinnie-002 | vinnie | 2026-04-19

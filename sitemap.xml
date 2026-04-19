@@ -304,4 +304,46 @@
       <news:title>Buffalo China Value</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/medicaid-spend-down-buffalo.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silver Buffalo News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-19</news:publication_date>
+      <news:title>Medicaid Spend Down Buffalo</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/diabetes-management-seniors.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silver Buffalo News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-19</news:publication_date>
+      <news:title>Diabetes Management Seniors</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://silverbuffalonews.com/articles/basement-water-buffalo.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silver Buffalo News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-19</news:publication_date>
+      <news:title>Basement Water Buffalo</news:title>
+    </news:news>
+  </url>
 </urlset>
