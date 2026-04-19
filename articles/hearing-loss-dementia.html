@@ -354,10 +354,28 @@
           <div class="newsletter-widget">
             <h3>📬 Free Weekly Digest</h3>
             <p>Health tips, money news &amp; local WNY stories — every Tuesday from Sully, Barb, and Vinnie.</p>
-            <form class="newsletter-form" novalidate>
-              <input type="email" class="newsletter-input" placeholder="Your email" required aria-label="Email address">
+            <form class="newsletter-form" id="beehiiv-form-article" novalidate>
+              <input type="email" class="newsletter-input" id="beehiiv-email-article" placeholder="Your email" required aria-label="Email address">
               <button type="submit" class="btn-newsletter">Subscribe Free →</button>
             </form>
+            <p class="newsletter-success" id="beehiiv-success-article" style="display:none;color:#a07408;font-weight:600;margin-top:0.5rem;">✅ You're in! Check your inbox to confirm.</p>
+            <script>
+            (function(){
+              var form = document.getElementById('beehiiv-form-article');
+              if(!form) return;
+              form.addEventListener('submit', function(e){
+                e.preventDefault();
+                var email = document.getElementById('beehiiv-email-article').value.trim();
+                if(!email) return;
+                var btn = form.querySelector('button');
+                btn.disabled = true;
+                btn.textContent = 'Subscribing…';
+                window.open('https://silverbuffalonews.beehiiv.com/subscribe?email=' + encodeURIComponent(email), '_blank');
+                form.style.display = 'none';
+                document.getElementById('beehiiv-success-article').style.display = 'block';
+              });
+            })();
+            </script>
           </div>
           <div>
             <p class="ad-label">Advertisement</p>

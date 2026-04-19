@@ -852,10 +852,33 @@
           <div id="newsletter" class="newsletter-widget">
             <h3>📬 Free Weekly Digest</h3>
             <p>Health tips, money news, and local WNY stories — delivered free every Tuesday morning.</p>
-            <form class="newsletter-form" novalidate>
-              <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email address">
+            <form class="newsletter-form" id="beehiiv-form-sidebar" novalidate>
+              <input type="email" class="newsletter-input" id="beehiiv-email-sidebar" placeholder="Your email address" required aria-label="Email address">
               <button type="submit" class="btn-newsletter">Send Me the Digest →</button>
             </form>
+            <p class="newsletter-success" id="beehiiv-success-sidebar" style="display:none;color:#a07408;font-weight:600;margin-top:0.5rem;">✅ You're in! Check your inbox to confirm.</p>
+            <script>
+            (function(){
+              var form = document.getElementById('beehiiv-form-sidebar');
+              if(!form) return;
+              form.addEventListener('submit', function(e){
+                e.preventDefault();
+                var email = document.getElementById('beehiiv-email-sidebar').value.trim();
+                if(!email) return;
+                var btn = form.querySelector('button');
+                btn.disabled = true;
+                btn.textContent = 'Subscribing…';
+                fetch('https://app.beehiiv.com/forms/subscribe', {
+                  method: 'POST',
+                  headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                  body: 'email=' + encodeURIComponent(email) + '&publication_id=silverbuffalonews'
+                }).catch(function(){}).finally(function(){
+                  form.style.display = 'none';
+                  document.getElementById('beehiiv-success-sidebar').style.display = 'block';
+                });
+              });
+            })();
+            </script>
           </div>
 
           <!-- Sidebar Ad #2 -->
