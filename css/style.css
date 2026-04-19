@@ -833,11 +833,10 @@ a:hover { color: var(--color-primary-hover); }
 
 /* Newsletter widget */
 .newsletter-widget {
-  background: var(--color-primary);
-  color: #fff;
+  background: transparent;
   border-radius: var(--radius-lg);
-  padding: var(--space-8);
-  text-align: center;
+  padding: 0;
+  overflow: hidden;
 }
 .newsletter-widget h3 {
   font-family: var(--font-display);
