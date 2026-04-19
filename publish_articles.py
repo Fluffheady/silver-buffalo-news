@@ -147,13 +147,22 @@ def fetch_cc0_image(writer, slug):
             return filename
     except Exception as e:
         print(f"  [image] Unsplash failed ({e}), using fallback")
-    # Fallback: use an existing image from the images dir
-    existing = [x for x in os.listdir(IMAGES) if x.endswith(".jpg") and x != filename]
-    if existing:
-        fallback = sorted(existing)[hash(slug) % len(existing)]
+    # Fallback: pick a category-appropriate image
+    CATEGORY_FALLBACKS = {
+        "sully":  ["cc0-senior-documents.jpg", "cc0-senior-phone.jpg", "cc0-utility-meter.jpg", "cc0-senior-worried.jpg"],
+        "barb":   ["cc0-couple-walking.jpg", "cc0-sleep-senior.jpg", "cc0-hearing-health.jpg", "cc0-senior-phone.jpg"],
+        "vinnie": ["cc0-buffalo-homes-snow.jpg", "cc0-furnace-boiler.jpg", "cc0-attic-vintage.jpg", "cc0-vinyl-records.jpg", "cc0-old-camera.jpg"],
+    }
+    pool = CATEGORY_FALLBACKS.get(writer, [])
+    # Filter to images that actually exist
+    pool = [x for x in pool if os.path.exists(os.path.join(IMAGES, x))]
+    if not pool:
+        pool = [x for x in os.listdir(IMAGES) if x.endswith(".jpg") and x != filename]
+    if pool:
+        fallback = pool[hash(slug) % len(pool)]
         print(f"  [image] Using fallback: {fallback}")
         return fallback
-    return "cc0-senior-lifestyle.jpg"
+    return "cc0-couple-walking.jpg"
 
 # ---------------------------------------------------------------------------
 # 3. ARTICLE CONTENT GENERATION
@@ -504,7 +513,7 @@ def build_article_html(item, content, image_file):
             <h1 class="article-h1">{headline}</h1>
             <p class="article-deck">{deck}</p>
             <div class="article-byline">
-              <img src="../images/team-{writer}.png" alt="{wm['name']}" width="52" height="52" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" loading="lazy" onerror="this.outerHTML='<div style=\'width:52px;height:52px;border-radius:50%;background:{wm[\'color\']};display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px;flex-shrink:0;\'>{wm[\'initials\']}</div>'">
+              <img src="../images/team-{writer}.png" alt="{wm['name']}" width="52" height="52" style="width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;" loading="lazy" onerror="this.style.display='none'">
               <div>
                 <div class="author-name">{wm['name']}{ai_badge}</div>
                 <div class="author-title">{wm['title']}</div>
@@ -649,7 +658,7 @@ def build_card_html(item, image_file, deck):
                     <h3 class="card-title"><a href="articles/{slug}.html">{headline}</a></h3>
                     <p class="card-excerpt">{excerpt}</p>
                     <div class="card-byline">
-                      <img src="images/team-{writer}.png" alt="{wm['name']}" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.outerHTML='<div class=\"byline-avatar\" style=\"background:{wm[\"color\"]};\">{wm[\"initials\"]}</div>'">
+                      <img src="images/team-{writer}.png" alt="{wm['name']}" style="width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top;" onerror="this.style.display='none'">
                       <div class="byline-info"><span class="byline-name">{wm['name']}</span><span class="byline-date">{TODAY}</span></div>
                     </div>
                   </div>
