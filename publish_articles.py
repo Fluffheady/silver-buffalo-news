@@ -561,7 +561,7 @@ def build_article_html(item, content, image_file):
 
           <div class="newsletter-widget">
             <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
-            <iframe src="https://subscribe-forms.beehiiv.com/43f243c6-d249-42db-a4ff-7cd33a219b09" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;min-height:320px;margin:0;border:none;background-color:transparent;" title="Subscribe to Silver Buffalo News free weekly digest"></iframe>
+            <iframe src="https://subscribe-forms.beehiiv.com/43f243c6-d249-42db-a4ff-7cd33a219b09" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width: 560px; height: 291px; margin: 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000; max-width: 100%;" title="Subscribe to Silver Buffalo News"></iframe>
           </div>
           
           <div>
