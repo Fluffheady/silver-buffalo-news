@@ -364,28 +364,8 @@
           <div class="newsletter-widget">
             <h3>📬 Free Weekly Digest</h3>
             <p>Health tips, money news &amp; local WNY stories — every Tuesday from Sully, Barb, and Vinnie.</p>
-            <form class="newsletter-form" id="beehiiv-form-article" novalidate>
-              <input type="email" class="newsletter-input" id="beehiiv-email-article" placeholder="Your email" required aria-label="Email address">
-              <button type="submit" class="btn-newsletter">Subscribe Free →</button>
-            </form>
-            <p class="newsletter-success" id="beehiiv-success-article" style="display:none;color:#a07408;font-weight:600;margin-top:0.5rem;">✅ You're in! Check your inbox to confirm.</p>
-            <script>
-            (function(){
-              var form = document.getElementById('beehiiv-form-article');
-              if(!form) return;
-              form.addEventListener('submit', function(e){
-                e.preventDefault();
-                var email = document.getElementById('beehiiv-email-article').value.trim();
-                if(!email) return;
-                var btn = form.querySelector('button');
-                btn.disabled = true;
-                btn.textContent = 'Subscribing…';
-                window.open('https://silverbuffalonews.beehiiv.com/subscribe?email=' + encodeURIComponent(email), '_blank');
-                form.style.display = 'none';
-                document.getElementById('beehiiv-success-article').style.display = 'block';
-              });
-            })();
-            </script>
+            <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+<iframe src="https://subscribe-forms.beehiiv.com/43f243c6-d249-42db-a4ff-7cd33a219b09" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0!important;background-color:transparent;box-shadow:none;" title="Subscribe to Silver Buffalo News"></iframe>
           </div>
           <div>
             <p class="ad-label">Advertisement</p>
@@ -477,5 +457,6 @@
   </footer>
 
   <script src="../js/main.js"></script>
+  <script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script>
 </body>
 </html>
