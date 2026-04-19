@@ -1386,3 +1386,25 @@ a:hover { color: var(--color-primary-hover); }
   background: var(--color-primary);
   color: #fff;
 }
+
+/* Inline related article callouts */
+p.related-inline {
+  background: #f0f4fa;
+  border-left: 4px solid var(--color-primary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 0.6rem 1rem;
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin: 1rem 0;
+}
+p.related-inline a.inline-article-link {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--color-gold);
+  text-underline-offset: 3px;
+}
+p.related-inline a.inline-article-link:hover {
+  color: var(--color-accent);
+}
